@@ -1,2 +1,2 @@
 #!/bin/bash
-my_python_code <<< $PYCODE
+$PYCODE >>> python3
