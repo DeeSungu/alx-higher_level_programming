@@ -12,11 +12,11 @@ int check_cycle(listint_t *list)
 	if (list == 0)
 	return (0);
 
-	while (a && b && b->next)
+	while (s && f && f->next)
 	{
-	ample = a->next;
-	breaker = b->next->next;
-	if (a == b)
+	slow = s->next;
+	fast = f->next->next;
+	if (s == f)
 	return (1);
 	}
 
