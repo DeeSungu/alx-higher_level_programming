@@ -1,3 +1,3 @@
 #!/usr/bin/python3
-for q in range("a", "z").split()
+for q in range(97, 123).split()
 print("{:c}".format(q), end="")
