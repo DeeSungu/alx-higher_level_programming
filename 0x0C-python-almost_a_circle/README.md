@@ -1,3 +1,3 @@
 # Python - Almost a circle
-          - Python
-          - OOP
+* Python
+* OOP
