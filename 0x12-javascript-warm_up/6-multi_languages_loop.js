@@ -1,6 +1,5 @@
 #!/usr/bin/node
-//A script that prints a loop through 3 messages to print to console
-const msgArray = ['C is fun', 'Python is cool', 'Javascript is amazing'];
-for (let i = 0; i < 3; i++) {
-  console.log(msgArray[i]);
+const lines = ['C is fun', 'Python is cool', 'JavaScript is amazing'];
+for (const line in lines) {
+  console.log(lines[line]);
 }
