@@ -1,7 +1,8 @@
 #!/usr/bin/python3
-""" A Script that displays all values in the states table 
-of hbtn_0e_0_usa where name 
-matches the argument by taking an argument"""
+"""
+A Script that displays all values in the states table
+of hbtn_0e_0_usa where name matches the argument by taking an argument
+"""
 import MySQLdb
 from sys import argv
 
