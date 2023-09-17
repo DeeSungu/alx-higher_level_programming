@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""A file that contains the class definition of a state and an instanca base
+"""A file that contains the class definition of a state
 """
 import sys
 from model_state import Base, State
