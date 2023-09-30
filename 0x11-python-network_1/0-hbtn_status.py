@@ -1,13 +1,13 @@
 #!/usr/bin/python3
-""" A Py script that fetches https://alx-intranet.hbtn.io/status
-import urllib.request"""
+"""A Py script Fetches https://intranet.hbtn.io/status."""
+if __name__ == "__main__":
+    import urllib.request
 
-url = "https://alx-intranet.hbtn.io/status"
+    with urllib.request.urlopen('https://alx-intranet.hbtn.io/status')\
+            as response:
+        html = response.read()
 
-try:
-    with urllib.request.urlopen(url) as response:
-        body = response.read().decode('utf-8')
-        print(f"Body response:\n{''.join(['\t' + line for line in body.splitlines(True)])}")
-except urllib.error.URLError as e:
-    print(f"Error fetching the URL: {e}")
-
+        print('Body response:')
+        print('\t- type: {}'.format(type(html)))
+        print('\t- content: {}'.format(html))
+        print('\t- utf8 content: {}'.format(html.decode("utf-8", "replace")))
